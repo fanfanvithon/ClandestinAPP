@@ -1,0 +1,131 @@
+.formulario {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #00b8ff;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-item {
+    width: calc(33.333% - 10px);
+    height: 50%;
+    /* Cada elemento ocupa un tercio del ancho de la pantalla */
+    border-radius: 10px;
+    border: 3px solid #00b8ff;
+    background-color: transparent;
+}
+
+ion-img {
+    width: 100%;
+    /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 100%;
+    /* Altura fija para todas las imágenes */
+    object-fit: cover;
+    /* La imagen se ajusta al tamaño sin deformarse */
+}
+
+ion-item {
+    --background: none;
+}
+
+ion-button {
+    --background: #711c91;
+}
+
+h1 {
+    color: white;
+}
+
+.espacio_superior {
+    padding-top: 3%;
+}
+
+ion-content {
+    --background: url("https://wallpapers.com/images/featured/pub-sg3h2yg86plufux1.jpg");
+    --background-size: cover;
+    --background-position: center;
+    --padding-start: 10%;
+    --padding-top: 5%;
+    --padding-end: 10%;
+    --display: grid;
+    --justify-content: center;
+    --align-content: center;
+    --align-items: center;
+}
+
+
+/* Footer general que está oculto por defecto */
+
+ion-footer {
+    display: none;
+}
+
+
+/* Mostrar el footer solo en dispositivos móviles */
+
+.mobile-footer ion-toolbar {
+    --background: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid #00b8ff;
+    display: flex;
+    justify-content: space-between;
+    /* Distribuir elementos horizontalmente */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+    width: 100%;
+    /* Ancho del footer al 100% */
+    padding: 0 10%;
+    /* Espaciado horizontal */
+}
+
+.mobile-footer ion-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.mobile-footer ion-button {
+    --background: transparent;
+    --color: #00b8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.mobile-footer ion-icon {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+
+/* Ajustes para dispositivos móviles */
+
+@media (max-width: 767px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        /* Cambia la dirección a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */
+    }
+    ion-footer {
+        display: block;
+    }
+    .form-item {
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px;
+        /* Agrega un margen inferior para separar los elementos */
+    }
+    ion-card-content {
+        padding: 10px;
+        /* Ajusta el espacio dentro del ion-card-content */
+    }
+}

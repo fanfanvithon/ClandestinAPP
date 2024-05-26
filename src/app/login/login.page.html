@@ -1,0 +1,110 @@
+<ion-header collapse="condense">
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="/">
+            <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-back-button>
+    </ion-buttons>
+</ion-header>
+
+
+
+
+
+<ion-content [fullscreen]="true">
+
+
+
+
+
+
+
+
+    <div class="iniciar_div">
+
+        <h1>INICIAR SESIÓN</h1>
+
+        <br>
+
+        <div>
+            <ion-item>
+                <ion-label position="floating" class="user_Name">Usuario</ion-label>
+                <ion-input type="text"></ion-input>
+            </ion-item>
+        </div>
+
+        <div>
+            <ion-item>
+                <ion-label position="floating" class="user_Name">Contraseña</ion-label>
+                <ion-input type="password"></ion-input>
+            </ion-item>
+        </div>
+
+        <div class="espacio_superior">
+            <ion-button class="boton" routerLink="/home">Ingresar</ion-button>
+            <br>
+            <br>
+
+            <ion-button routerLink="/home">Recuperar Contraseña</ion-button>
+
+            <h3>¿No tienes cuenta? <br>¡Crea una!</h3>
+            <ion-button routerLink="/elegir-usuario">Registrar</ion-button>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>
+
+
+<ion-footer class="mobile-footer">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/home">
+                <ion-icon name="home-outline"></ion-icon>
+
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/promociones">
+                <ion-icon name="pricetag-outline"></ion-icon>
+
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="start">
+            <ion-button routerLink="/productos">
+                <ion-icon name="search-outline"></ion-icon>
+
+            </ion-button>
+        </ion-buttons>
+
+        <ion-buttons slot="start">
+            <ion-button routerLink="/soporte">
+                <ion-icon name="help-circle-outline"></ion-icon>
+
+            </ion-button>
+        </ion-buttons>
+
+        <ion-buttons slot="start">
+            <ion-button routerLink="/perfil-usuario">
+                <ion-icon name="person-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+
+
+    </ion-toolbar>
+</ion-footer>

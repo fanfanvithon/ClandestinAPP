@@ -1,0 +1,59 @@
+.formulario {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #711c91;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-item {
+    width: calc(33.333% - 10px);
+    height: 50%;
+    /* Cada elemento ocupa un tercio del ancho de la pantalla */
+    border-radius: 10px;
+    border: 3px solid #711c91;
+    background-color: transparent;
+}
+
+ion-img {
+    width: 100%;
+    /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 100%;
+    /* Altura fija para todas las imágenes */
+    object-fit: cover;
+    /* La imagen se ajusta al tamaño sin deformarse */
+}
+
+ion-item {
+    --background: none;
+}
+
+ion-button {
+    --background: #711c91;
+}
+
+h1 {
+    color: white;
+}
+
+.espacio_superior {
+    padding-top: 3%;
+}
+
+ion-content {
+    --background: url("https://wallpapers.com/images/featured/pub-sg3h2yg86plufux1.jpg");
+    --background-size: cover;
+    --background-position: center;
+    --padding-start: 10%;
+    --padding-top: 5%;
+    --padding-end: 10%;
+    --display: grid;
+    --justify-content: center;
+    --align-content: center;
+    --align-items: center;
+}

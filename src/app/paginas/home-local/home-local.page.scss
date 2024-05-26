@@ -17,6 +17,7 @@ ion-button {
 }
 
 ion-card {
+    font-size: 1rem;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -156,4 +157,36 @@ ion-footer {
 .mobile-footer ion-icon {
     font-size: 1.5rem;
     margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+    ion-card {
+        padding: 2%;
+        margin: 5px;
+        font-size: 0.9rem;
+        /* Ajusta el tamaño del texto para móviles */
+    }
+    ion-card-header,
+    ion-card-content,
+    ion-card-title,
+    ion-card-subtitle {
+        font-size: 0.8rem;
+        /* Ajusta el tamaño del texto para móviles */
+        padding: 0.3rem;
+        /* Ajusta el padding para móviles */
+    }
+    .promo-card {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        max-height: 60vh;
+        /* Ajusta la altura máxima para móviles */
+    }
+    .promo-image {
+        max-height: 30vh;
+        /* Ajusta la altura de la imagen para móviles */
+    }
+    ion-grid {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 }

@@ -1,0 +1,144 @@
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    //border: 3px solid #00b8ff;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    /* Altura máxima del 70% del viewport height */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #00b8ff;
+}
+
+.product-card ion-card-content {
+    width: 100%;
+}
+
+.product-price {
+    text-align: center;
+    font-weight: bold;
+    font-size: auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    --display: flex;
+    --background: transparent;
+    --justify-content: center;
+    --align-items: center;
+}
+
+ion-content {
+    --background: url("https://wallpapers.com/images/featured/pub-sg3h2yg86plufux1.jpg");
+    --background-size: cover;
+    --background-position: center;
+    --padding-start: 10%;
+    --padding-top: 5%;
+    --padding-end: 10%;
+    --display: grid;
+    --justify-content: center;
+    --align-content: center;
+    --align-items: center;
+}
+
+.iniciar_div {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5%;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+ion-button {
+    --background: #711c91;
+}
+
+.titulo {
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+    /* Ajusta el tamaño de la fuente del título */
+}
+
+
+/* Footer general que está oculto por defecto */
+
+ion-footer {
+    display: none;
+}
+
+
+/* Mostrar el footer solo en dispositivos móviles */
+
+@media (max-width: 767px) {
+    ion-footer {
+        display: block;
+    }
+}
+
+.mobile-footer ion-toolbar {
+    --background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid #00b8ff;
+    display: flex;
+    justify-content: space-between;
+    /* Distribuir elementos horizontalmente */
+    align-items: center;
+    /* Centrar elementos verticalmente */
+    width: 100%;
+    /* Ancho del footer al 100% */
+    padding: 0 10%;
+    /* Espaciado horizontal */
+}
+
+.mobile-footer ion-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.mobile-footer ion-button {
+    --background: transparent;
+    --color: #00b8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.mobile-footer ion-icon {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+
+/* Media query para ajustar estilos en dispositivos móviles */
+
+@media (max-width: 768px) {
+    .product-card {
+        padding: 10px;
+    }
+    .product-image {
+        padding: 5px;
+        margin-bottom: 5%;
+    }
+    .product-price {
+        font-size: 1rem;
+        /* Ajusta el tamaño de fuente para móviles */
+    }
+    .iniciar_div {
+        font-size: 0.9rem;
+        /* Ajusta el tamaño de fuente para móviles */
+    }
+    .titulo {
+        font-size: 1.2rem;
+        /* Ajusta el tamaño de la fuente del título para móviles */
+    }
+}

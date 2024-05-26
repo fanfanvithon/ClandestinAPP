@@ -1,0 +1,43 @@
+ion-content {
+    --background: url("https://wallpapers.com/images/featured/pub-sg3h2yg86plufux1.jpg");
+    --background-size: cover;
+    /* Ajusta el tamaño de la imagen para que se ajuste al contenedor */
+    --background-position: center;
+    --padding-start: 10%;
+    --padding-top: 5%;
+    --padding-end: 10%;
+    .formulario {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        border: 3px solid #711c91;
+        ion-item {
+            --background: none;
+        }
+        ion-button {
+            --background: #711c91;
+        }
+    }
+    h3 {
+        padding-top: 100px;
+        color: white;
+    }
+    h1 {
+        color: white;
+    }
+    .espacio_superior {
+        padding-top: 3%;
+    }
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form-row {
+        width: 48%;
+        /* Ancho de los ítems */
+        margin-bottom: 10px;
+        /* Espacio entre las filas */
+    }
+}
